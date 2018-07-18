@@ -1,0 +1,39 @@
+﻿
+
+
+@{
+    ViewBag.Title = "Index";
+}
+<style>
+    .btn a{
+        color: white;
+        text-decoration: none;
+    }
+    
+    body{
+        background-color: aquamarine;
+    }
+</style>
+
+<div class="text-center">
+
+    <h2>We're having a party!</h2>
+    <h4>And you're invited!</h4>
+
+    <img src="~/Content/3D-Party.jpg" width="400" height="300" />
+    <br />
+    <br />
+    <div class="btn btn-success">
+        @Html.ActionLink("RSVP Now", "RsvpForm")
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+

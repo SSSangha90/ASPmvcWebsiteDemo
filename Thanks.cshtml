@@ -1,0 +1,27 @@
+﻿@model partyInvitationJuly.Models.guestResponse
+
+@{
+    ViewBag.Title = "Thanks";
+}
+
+<style>
+    body{
+        background-color: purple;
+    }
+</style>
+<div class="text-center">
+    <h2>Thank you, @Model.Name!</h2>
+    <div class="lead">
+        @if (Model.WillAttend == true)
+        {
+            @:It's great that you're coming!
+}
+        else
+        {
+            @: Sorry to hear that you can't make it, but thanks for letting me know.
+}
+
+    </div>
+</div>
+
+
